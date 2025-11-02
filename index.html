@@ -381,7 +381,7 @@
             max-width: 220px;
             text-align: center;
             opacity: 0;
-            animation: appearStayDisappear 7s ease-out forwards;
+            animation: appearStayDisappear 5s ease-out forwards; /* 缩短为5秒 */
             word-wrap: break-word;
             transform: scale(0);
             pointer-events: none;
@@ -576,7 +576,7 @@
             "#D8BFD8", "#B0E0E6", "#F0E68C", "#FFD700"
         ];
         
-        // 烟花效果实现 [1,6,8](@ref)
+        // 烟花效果实现 [1,4,6](@ref)
         function initFireworks() {
             const canvas = document.getElementById('fireworksCanvas');
             const ctx = canvas.getContext('2d');
@@ -786,13 +786,26 @@
         
         // 开始祝福语动画
         function startBlessingAnimation() {
-            setInterval(createBlessing, 400);
+            // 增加祝福语生成频率：从400ms减少到200ms
+            setInterval(createBlessing, 200);
             
-            for (let i = 0; i < 5; i++) {
+            // 增加初始祝福语数量：从5个增加到10个
+            for (let i = 0; i < 10; i++) {
                 setTimeout(() => {
                     createBlessing();
-                }, i * 200);
+                }, i * 150); // 减少间隔时间，从200ms减少到150ms
             }
+            
+            // 添加额外的祝福语生成器，每次生成多个祝福语
+            setInterval(() => {
+                // 每次生成2-3个祝福语
+                const count = Math.floor(Math.random() * 2) + 2;
+                for (let i = 0; i < count; i++) {
+                    setTimeout(() => {
+                        createBlessing();
+                    }, i * 100);
+                }
+            }, 1000); // 每1秒生成一组祝福语
         }
         
         // 创建祝福语
@@ -824,18 +837,20 @@
             
             blessingsContainer.appendChild(blessingElement);
             
+            // 缩短祝福语显示时间，从7000ms减少到5000ms
             setTimeout(() => {
                 if (blessingElement.parentNode) {
                     blessingElement.parentNode.removeChild(blessingElement);
                 }
-            }, 7000);
+            }, 5000);
             
+            // 增加最大祝福语数量限制
             setTimeout(() => {
                 const blessings = blessingsContainer.querySelectorAll('.blessing');
-                if (blessings.length > 25) {
+                if (blessings.length > 35) { // 从25增加到35
                     blessings[0].remove();
                 }
-            }, 10000);
+            }, 6000);
         }
         
         // 颜色亮化函数
