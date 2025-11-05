@@ -133,11 +133,11 @@
             border: 2px solid rgba(255, 105, 180, 0.5);
         }
         
-        /* 蛋糕容器样式 */
+        /* 蛋糕容器样式 - 增大尺寸 */
         #cake-container {
             position: relative;
-            width: 320px;
-            height: 300px;
+            width: 400px; /* 从320px增加到400px */
+            height: 380px; /* 从300px增加到380px */
             margin-bottom: 50px;
             z-index: 5;
             filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.3));
@@ -146,11 +146,11 @@
         /* 蛋糕底盘 */
         .cake-plate {
             position: absolute;
-            width: 280px;
-            height: 15px;
+            width: 350px; /* 从280px增加到350px */
+            height: 20px; /* 从15px增加到20px */
             background: linear-gradient(to right, #f5f5f5, #e0e0e0, #f5f5f5);
             bottom: 0;
-            left: 20px;
+            left: 25px; /* 调整位置 */
             border-radius: 50%;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
             z-index: 1;
@@ -159,15 +159,15 @@
         .cake-plate::before {
             content: '';
             position: absolute;
-            width: 240px;
-            height: 10px;
+            width: 300px; /* 从240px增加到300px */
+            height: 15px; /* 从10px增加到15px */
             background: linear-gradient(to right, #e8e8e8, #d0d0d0, #e8e8e8);
             border-radius: 50%;
-            bottom: -5px;
-            left: 20px;
+            bottom: -7px; /* 调整位置 */
+            left: 25px; /* 调整位置 */
         }
         
-        /* 蛋糕层 */
+        /* 蛋糕层 - 全部改为白色 */
         .cake-layer {
             position: absolute;
             border-radius: 10px;
@@ -178,11 +178,12 @@
         }
         
         .layer-1 {
-            width: 260px;
-            height: 50px;
-            background: linear-gradient(to bottom, #FFD700, #FFA500, #FF8C00);
-            bottom: 15px;
-            left: 30px;
+            width: 320px; /* 从260px增加到320px */
+            height: 60px; /* 从50px增加到60px */
+            /* 改为白色渐变 */
+            background: linear-gradient(to bottom, #FFFFFF, #F8F8F8, #F0F0F0);
+            bottom: 20px; /* 调整位置 */
+            left: 40px; /* 调整位置 */
             z-index: 4;
         }
         
@@ -190,19 +191,20 @@
             content: '';
             position: absolute;
             width: 100%;
-            height: 10px;
-            background: linear-gradient(to bottom, rgba(255, 215, 0, 0.7), transparent);
+            height: 12px; /* 从10px增加到12px */
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), transparent);
             top: 0;
             left: 0;
             border-radius: 10px 10px 0 0;
         }
         
         .layer-2 {
-            width: 220px;
-            height: 50px;
-            background: linear-gradient(to bottom, #20B2AA, #008B8B, #006666);
-            bottom: 65px;
-            left: 50px;
+            width: 270px; /* 从220px增加到270px */
+            height: 60px; /* 从50px增加到60px */
+            /* 改为白色渐变 */
+            background: linear-gradient(to bottom, #FFFFFF, #F5F5F5, #EEEEEE);
+            bottom: 80px; /* 调整位置 */
+            left: 65px; /* 调整位置 */
             z-index: 3;
         }
         
@@ -210,19 +212,20 @@
             content: '';
             position: absolute;
             width: 100%;
-            height: 10px;
-            background: linear-gradient(to bottom, rgba(32, 178, 170, 0.7), transparent);
+            height: 12px; /* 从10px增加到12px */
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), transparent);
             top: 0;
             left: 0;
             border-radius: 10px 10px 0 0;
         }
         
         .layer-3 {
-            width: 180px;
-            height: 50px;
-            background: linear-gradient(to bottom, #9370DB, #8A2BE2, #6A0DAD);
-            bottom: 115px;
-            left: 70px;
+            width: 220px; /* 从180px增加到220px */
+            height: 60px; /* 从50px增加到60px */
+            /* 改为白色渐变 */
+            background: linear-gradient(to bottom, #FFFFFF, #F3F3F3, #E8E8E8);
+            bottom: 140px; /* 调整位置 */
+            left: 90px; /* 调整位置 */
             z-index: 2;
         }
         
@@ -230,19 +233,20 @@
             content: '';
             position: absolute;
             width: 100%;
-            height: 10px;
-            background: linear-gradient(to bottom, rgba(147, 112, 219, 0.7), transparent);
+            height: 12px; /* 从10px增加到12px */
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), transparent);
             top: 0;
             left: 0;
             border-radius: 10px 10px 0 0;
         }
         
         .layer-4 {
-            width: 140px;
-            height: 40px;
-            background: linear-gradient(to bottom, #FF69B4, #FF1493, #D1006B);
-            bottom: 165px;
-            left: 90px;
+            width: 170px; /* 从140px增加到170px */
+            height: 50px; /* 从40px增加到50px */
+            /* 改为白色渐变 */
+            background: linear-gradient(to bottom, #FFFFFF, #F0F0F0, #E0E0E0);
+            bottom: 200px; /* 调整位置 */
+            left: 115px; /* 调整位置 */
             z-index: 1;
         }
         
@@ -250,14 +254,14 @@
             content: '';
             position: absolute;
             width: 100%;
-            height: 8px;
-            background: linear-gradient(to bottom, rgba(255, 105, 180, 0.7), transparent);
+            height: 10px; /* 从8px增加到10px */
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), transparent);
             top: 0;
             left: 0;
             border-radius: 10px 10px 0 0;
         }
         
-        /* 糖霜装饰 */
+        /* 糖霜装饰 - 保持白色 */
         .frosting {
             position: absolute;
             background: white;
@@ -266,73 +270,74 @@
         }
         
         .frosting-1 {
-            width: 20px;
-            height: 15px;
-            bottom: 205px;
-            left: 100px;
+            width: 25px; /* 从20px增加到25px */
+            height: 18px; /* 从15px增加到18px */
+            bottom: 220px; /* 调整位置 */
+            left: 125px; /* 调整位置 */
+            box-shadow: 
+                35px 0 white,
+                70px 0 white,
+                105px 0 white;
+        }
+        
+        .frosting-2 {
+            width: 18px; /* 从15px增加到18px */
+            height: 15px; /* 从12px增加到15px */
+            bottom: 170px; /* 调整位置 */
+            left: 140px; /* 调整位置 */
             box-shadow: 
                 30px 0 white,
                 60px 0 white,
                 90px 0 white;
         }
         
-        .frosting-2 {
-            width: 15px;
-            height: 12px;
-            bottom: 155px;
-            left: 110px;
+        .frosting-3 {
+            width: 15px; /* 从12px增加到15px */
+            height: 12px; /* 从10px增加到12px */
+            bottom: 120px; /* 调整位置 */
+            left: 155px; /* 调整位置 */
             box-shadow: 
                 25px 0 white,
                 50px 0 white,
                 75px 0 white;
         }
         
-        .frosting-3 {
-            width: 12px;
-            height: 10px;
-            bottom: 105px;
-            left: 120px;
-            box-shadow: 
-                20px 0 white,
-                40px 0 white,
-                60px 0 white;
-        }
-        
-        /* 蜡烛样式 */
+        /* 蜡烛样式 - 更精细 */
         .candle {
             position: absolute;
-            width: 10px;
-            height: 70px;
+            width: 12px; /* 从10px增加到12px */
+            height: 85px; /* 从70px增加到85px */
             background: linear-gradient(to right, #FFD700, #FFF, #FFD700);
             border-radius: 5px 5px 0 0;
             z-index: 6;
-            bottom: 165px;
-            left: 155px;
+            bottom: 200px; /* 调整位置 */
+            left: 194px; /* 调整位置 */
             box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
         }
         
         .candle::before {
             content: '';
             position: absolute;
-            width: 14px;
-            height: 5px;
+            width: 16px; /* 从14px增加到16px */
+            height: 6px; /* 从5px增加到6px */
             background: #FF1493;
             top: 0;
             left: -2px;
-            border-radius: 2px;
+            border-radius: 3px; /* 从2px增加到3px */
         }
         
+        /* 更精细的火焰效果 */
         .flame {
             position: absolute;
-            width: 16px;
-            height: 30px;
+            width: 20px; /* 从16px增加到20px */
+            height: 40px; /* 从30px增加到40px */
             background: radial-gradient(circle at 30% 30%, #FFF 0%, #FFD700 30%, #FF4500 70%, transparent 100%);
             border-radius: 50% 50% 20% 20%;
-            bottom: 40px;
+            bottom: 45px; /* 调整位置 */
             left: 50%;
             transform: translateX(-50%);
             animation: flicker 1.2s infinite alternate;
-            box-shadow: 0 0 20px #FFD700, 0 0 40px #FF4500;
+            box-shadow: 0 0 25px #FFD700, 0 0 50px #FF4500;
             z-index: 7;
         }
         
@@ -342,15 +347,15 @@
                 opacity: 0.9; 
             }
             25% { 
-                transform: translateX(-50%) scale(1.1) rotate(1deg); 
+                transform: translateX(-50%) scale(1.15) rotate(2deg); 
                 opacity: 1; 
             }
             50% { 
-                transform: translateX(-50%) scale(0.9) rotate(-1deg); 
+                transform: translateX(-50%) scale(0.95) rotate(-2deg); 
                 opacity: 0.8; 
             }
             75% { 
-                transform: translateX(-50%) scale(1.05) rotate(0.5deg); 
+                transform: translateX(-50%) scale(1.1) rotate(1deg); 
                 opacity: 1; 
             }
         }
@@ -358,13 +363,33 @@
         .flame::after {
             content: '';
             position: absolute;
-            width: 10px;
-            height: 20px;
+            width: 12px; /* 从10px增加到12px */
+            height: 25px; /* 从20px增加到25px */
             background: rgba(255, 255, 255, 0.5);
             top: 5px;
-            left: 3px;
+            left: 4px; /* 调整位置 */
             border-radius: 50%;
-            filter: blur(3px);
+            filter: blur(4px); /* 从3px增加到4px */
+        }
+        
+        /* 添加蜡烛光晕效果 - 更精细 */
+        .candle-glow {
+            position: absolute;
+            width: 60px; /* 光晕宽度 */
+            height: 100px; /* 光晕高度 */
+            background: radial-gradient(circle, rgba(255, 215, 0, 0.3) 0%, transparent 70%);
+            border-radius: 50%;
+            bottom: 180px; /* 调整位置 */
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 4;
+            animation: glowPulse 2s infinite alternate;
+            filter: blur(15px);
+        }
+        
+        @keyframes glowPulse {
+            0% { opacity: 0.3; transform: translateX(-50%) scale(0.9); }
+            100% { opacity: 0.7; transform: translateX(-50%) scale(1.1); }
         }
         
         /* 祝福语样式 */
@@ -381,7 +406,7 @@
             max-width: 220px;
             text-align: center;
             opacity: 0;
-            animation: appearStayDisappear 5s ease-out forwards; /* 缩短为5秒 */
+            animation: appearStayDisappear 5s ease-out forwards;
             word-wrap: break-word;
             transform: scale(0);
             pointer-events: none;
@@ -441,58 +466,64 @@
             }
             
             #cake-container {
-                width: 280px;
-                height: 260px;
+                width: 320px; /* 调整移动端尺寸 */
+                height: 300px;
             }
             
             .cake-plate {
-                width: 240px;
+                width: 280px;
                 left: 20px;
             }
             
             .layer-1 {
-                width: 220px;
-                height: 40px;
-                left: 30px;
+                width: 250px;
+                height: 45px;
+                left: 35px;
             }
             
             .layer-2 {
-                width: 180px;
-                height: 40px;
-                left: 50px;
+                width: 200px;
+                height: 45px;
+                left: 60px;
             }
             
             .layer-3 {
-                width: 140px;
-                height: 40px;
-                left: 70px;
+                width: 160px;
+                height: 45px;
+                left: 80px;
             }
             
             .layer-4 {
-                width: 100px;
-                height: 30px;
-                left: 90px;
-            }
-            
-            .frosting-1 {
-                bottom: 175px;
+                width: 120px;
+                height: 35px;
                 left: 100px;
             }
             
-            .frosting-2 {
-                bottom: 135px;
+            .frosting-1 {
+                bottom: 185px;
                 left: 110px;
             }
             
-            .frosting-3 {
-                bottom: 95px;
+            .frosting-2 {
+                bottom: 145px;
                 left: 120px;
             }
             
+            .frosting-3 {
+                bottom: 105px;
+                left: 130px;
+            }
+            
             .candle {
-                height: 60px;
-                bottom: 135px;
-                left: 135px;
+                height: 65px;
+                bottom: 145px;
+                left: 150px;
+            }
+            
+            .candle-glow {
+                bottom: 130px;
+                width: 50px;
+                height: 80px;
             }
             
             .blessing {
@@ -527,6 +558,9 @@
         
         <!-- 蛋糕容器 -->
         <div id="cake-container">
+            <!-- 蜡烛光晕 -->
+            <div class="candle-glow"></div>
+            
             <!-- 蛋糕底盘 -->
             <div class="cake-plate"></div>
             
@@ -554,12 +588,9 @@
         <div id="musicControl">♪</div>
     </div>
 
-    <!-- 背景音乐 - 已修改为本地文件路径 -->
+    <!-- 背景音乐 -->
     <audio id="birthdayBGM" loop>
         <source src="D:/KuGou/库库小队 - 生日快乐 (Happy Birthday)(英文版).mp3" type="audio/mpeg">
-        <!-- 备用在线音乐源，以防本地文件无法加载 -->
-        <source src="https://assets.mixkit.co/music/preview/mixkit-happy-birthday-in-hawaii-80.mp3" type="audio/mpeg">
-        您的浏览器不支持音频元素。
     </audio>
 
     <script>
@@ -579,7 +610,7 @@
             "#D8BFD8", "#B0E0E6", "#F0E68C", "#FFD700"
         ];
         
-        // 烟花效果实现
+        // 烟花效果实现 - 增加烟花数量
         function initFireworks() {
             const canvas = document.getElementById('fireworksCanvas');
             const ctx = canvas.getContext('2d');
@@ -613,7 +644,7 @@
                 constructor(x, y, targetY) {
                     this.x = x || random(100, canvas.width - 100);
                     this.y = y || canvas.height;
-                    // 调整目标高度为画布的1/4处（原来为1/2处），让烟花飞得更高
+                    // 调整目标高度为画布的1/4处，让烟花飞得更高
                     this.targetY = targetY || random(50, canvas.height / 4);
                     // 增加上升速度，让烟花更快到达高点
                     this.speed = random(3, 5);
@@ -639,8 +670,8 @@
                 }
                 
                 explode() {
-                    // 增加粒子数量，让爆炸效果更壮观
-                    const particleCount = 120;
+                    // 增加粒子数量，让爆炸效果更壮观（从120增加到150）
+                    const particleCount = 150;
                     for (let i = 0; i < particleCount; i++) {
                         particles.push(new Particle(this.x, this.y, this.color));
                     }
@@ -729,8 +760,8 @@
                     }
                 }
                 
-                // 降低新烟花生成频率，避免过于密集
-                if (Math.random() < 0.015) {
+                // 增加新烟花生成频率，从0.015增加到0.025
+                if (Math.random() < 0.025) {
                     createFirework();
                 }
             }
