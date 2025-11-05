@@ -133,11 +133,11 @@
             border: 2px solid rgba(255, 105, 180, 0.5);
         }
         
-        /* 蛋糕容器样式 - 增大尺寸 */
+        /* 蛋糕容器样式 - 进一步增大尺寸 */
         #cake-container {
             position: relative;
-            width: 400px; /* 从320px增加到400px */
-            height: 380px; /* 从300px增加到380px */
+            width: 450px; /* 从400px增加到450px */
+            height: 420px; /* 从380px增加到420px */
             margin-bottom: 50px;
             z-index: 5;
             filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.3));
@@ -146,11 +146,11 @@
         /* 蛋糕底盘 */
         .cake-plate {
             position: absolute;
-            width: 350px; /* 从280px增加到350px */
-            height: 20px; /* 从15px增加到20px */
-            background: linear-gradient(to right, #f5f5f5, #e0e0e0, #f5f5f5);
+            width: 380px; /* 从350px增加到380px */
+            height: 22px; /* 从20px增加到22px */
+            background: linear-gradient(to right, #f8f8f8, #e8e8e8, #f8f8f8);
             bottom: 0;
-            left: 25px; /* 调整位置 */
+            left: 35px; /* 调整位置 */
             border-radius: 50%;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
             z-index: 1;
@@ -159,31 +159,32 @@
         .cake-plate::before {
             content: '';
             position: absolute;
-            width: 300px; /* 从240px增加到300px */
-            height: 15px; /* 从10px增加到15px */
-            background: linear-gradient(to right, #e8e8e8, #d0d0d0, #e8e8e8);
+            width: 320px; /* 从300px增加到320px */
+            height: 16px; /* 从15px增加到16px */
+            background: linear-gradient(to right, #f0f0f0, #d8d8d8, #f0f0f0);
             border-radius: 50%;
-            bottom: -7px; /* 调整位置 */
-            left: 25px; /* 调整位置 */
+            bottom: -8px; /* 调整位置 */
+            left: 30px; /* 调整位置 */
         }
         
-        /* 蛋糕层 - 全部改为白色 */
+        /* 蛋糕层 - 使用更仿真的颜色 */
         .cake-layer {
             position: absolute;
-            border-radius: 10px;
+            border-radius: 12px; /* 增加圆角 */
             box-shadow: 
-                inset 0 5px 10px rgba(255, 255, 255, 0.5),
-                0 5px 15px rgba(0, 0, 0, 0.3);
-            border: 2px solid rgba(255, 255, 255, 0.2);
+                inset 0 6px 12px rgba(255, 255, 255, 0.6),
+                0 6px 18px rgba(0, 0, 0, 0.4);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            z-index: 2;
         }
         
+        /* 底层 - 奶油色渐变，更真实 */
         .layer-1 {
-            width: 320px; /* 从260px增加到320px */
-            height: 60px; /* 从50px增加到60px */
-            /* 改为白色渐变 */
-            background: linear-gradient(to bottom, #FFFFFF, #F8F8F8, #F0F0F0);
-            bottom: 20px; /* 调整位置 */
-            left: 40px; /* 调整位置 */
+            width: 350px; /* 从320px增加到350px */
+            height: 65px; /* 从60px增加到65px */
+            background: linear-gradient(to bottom, #FFF5E1, #F8E8C8, #F0D8A8);
+            bottom: 22px; /* 调整位置 */
+            left: 50px; /* 调整位置 */
             z-index: 4;
         }
         
@@ -191,20 +192,20 @@
             content: '';
             position: absolute;
             width: 100%;
-            height: 12px; /* 从10px增加到12px */
-            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), transparent);
+            height: 14px; /* 从12px增加到14px */
+            background: linear-gradient(to bottom, rgba(255, 245, 225, 0.8), transparent);
             top: 0;
             left: 0;
-            border-radius: 10px 10px 0 0;
+            border-radius: 12px 12px 0 0;
         }
         
+        /* 第二层 - 浅黄色，更真实 */
         .layer-2 {
-            width: 270px; /* 从220px增加到270px */
-            height: 60px; /* 从50px增加到60px */
-            /* 改为白色渐变 */
-            background: linear-gradient(to bottom, #FFFFFF, #F5F5F5, #EEEEEE);
-            bottom: 80px; /* 调整位置 */
-            left: 65px; /* 调整位置 */
+            width: 290px; /* 从270px增加到290px */
+            height: 65px; /* 从60px增加到65px */
+            background: linear-gradient(to bottom, #FFEBB5, #F5D897, #E8C87A);
+            bottom: 87px; /* 调整位置 */
+            left: 80px; /* 调整位置 */
             z-index: 3;
         }
         
@@ -212,20 +213,20 @@
             content: '';
             position: absolute;
             width: 100%;
-            height: 12px; /* 从10px增加到12px */
-            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), transparent);
+            height: 14px; /* 从12px增加到14px */
+            background: linear-gradient(to bottom, rgba(255, 235, 181, 0.8), transparent);
             top: 0;
             left: 0;
-            border-radius: 10px 10px 0 0;
+            border-radius: 12px 12px 0 0;
         }
         
+        /* 第三层 - 金黄色，更真实 */
         .layer-3 {
-            width: 220px; /* 从180px增加到220px */
-            height: 60px; /* 从50px增加到60px */
-            /* 改为白色渐变 */
-            background: linear-gradient(to bottom, #FFFFFF, #F3F3F3, #E8E8E8);
-            bottom: 140px; /* 调整位置 */
-            left: 90px; /* 调整位置 */
+            width: 230px; /* 从220px增加到230px */
+            height: 65px; /* 从60px增加到65px */
+            background: linear-gradient(to bottom, #FFD700, #F0C050, #E0B040);
+            bottom: 152px; /* 调整位置 */
+            left: 110px; /* 调整位置 */
             z-index: 2;
         }
         
@@ -233,20 +234,20 @@
             content: '';
             position: absolute;
             width: 100%;
-            height: 12px; /* 从10px增加到12px */
-            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), transparent);
+            height: 14px; /* 从12px增加到14px */
+            background: linear-gradient(to bottom, rgba(255, 215, 0, 0.7), transparent);
             top: 0;
             left: 0;
-            border-radius: 10px 10px 0 0;
+            border-radius: 12px 12px 0 0;
         }
         
+        /* 顶层 - 深黄色，更真实 */
         .layer-4 {
-            width: 170px; /* 从140px增加到170px */
-            height: 50px; /* 从40px增加到50px */
-            /* 改为白色渐变 */
-            background: linear-gradient(to bottom, #FFFFFF, #F0F0F0, #E0E0E0);
-            bottom: 200px; /* 调整位置 */
-            left: 115px; /* 调整位置 */
+            width: 170px; /* 从170px保持不变 */
+            height: 55px; /* 从50px增加到55px */
+            background: linear-gradient(to bottom, #FFC000, #E8A840, #D09030);
+            bottom: 217px; /* 调整位置 */
+            left: 140px; /* 调整位置 */
             z-index: 1;
         }
         
@@ -254,86 +255,111 @@
             content: '';
             position: absolute;
             width: 100%;
-            height: 10px; /* 从8px增加到10px */
-            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), transparent);
+            height: 12px; /* 从10px增加到12px */
+            background: linear-gradient(to bottom, rgba(255, 192, 0, 0.7), transparent);
             top: 0;
             left: 0;
-            border-radius: 10px 10px 0 0;
+            border-radius: 12px 12px 0 0;
         }
         
-        /* 糖霜装饰 - 保持白色 */
+        /* 糖霜装饰 - 使用奶油色 */
         .frosting {
             position: absolute;
-            background: white;
+            background: #FFF8DC; /* 奶油色 */
             border-radius: 50%;
             z-index: 5;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         
         .frosting-1 {
-            width: 25px; /* 从20px增加到25px */
-            height: 18px; /* 从15px增加到18px */
-            bottom: 220px; /* 调整位置 */
-            left: 125px; /* 调整位置 */
+            width: 28px; /* 从25px增加到28px */
+            height: 20px; /* 从18px增加到20px */
+            bottom: 242px; /* 调整位置 */
+            left: 145px; /* 调整位置 */
             box-shadow: 
-                35px 0 white,
-                70px 0 white,
-                105px 0 white;
+                40px 0 #FFF8DC,
+                80px 0 #FFF8DC,
+                120px 0 #FFF8DC;
         }
         
         .frosting-2 {
-            width: 18px; /* 从15px增加到18px */
-            height: 15px; /* 从12px增加到15px */
-            bottom: 170px; /* 调整位置 */
-            left: 140px; /* 调整位置 */
+            width: 20px; /* 从18px增加到20px */
+            height: 16px; /* 从15px增加到16px */
+            bottom: 187px; /* 调整位置 */
+            left: 160px; /* 调整位置 */
             box-shadow: 
-                30px 0 white,
-                60px 0 white,
-                90px 0 white;
+                35px 0 #FFF8DC,
+                70px 0 #FFF8DC,
+                105px 0 #FFF8DC;
         }
         
         .frosting-3 {
-            width: 15px; /* 从12px增加到15px */
-            height: 12px; /* 从10px增加到12px */
-            bottom: 120px; /* 调整位置 */
-            left: 155px; /* 调整位置 */
+            width: 16px; /* 从15px增加到16px */
+            height: 14px; /* 从12px增加到14px */
+            bottom: 132px; /* 调整位置 */
+            left: 175px; /* 调整位置 */
             box-shadow: 
-                25px 0 white,
-                50px 0 white,
-                75px 0 white;
+                30px 0 #FFF8DC,
+                60px 0 #FFF8DC,
+                90px 0 #FFF8DC;
         }
         
         /* 蜡烛样式 - 更精细 */
         .candle {
             position: absolute;
-            width: 12px; /* 从10px增加到12px */
-            height: 85px; /* 从70px增加到85px */
-            background: linear-gradient(to right, #FFD700, #FFF, #FFD700);
-            border-radius: 5px 5px 0 0;
+            width: 14px; /* 从12px增加到14px */
+            height: 90px; /* 从85px增加到90px */
+            background: linear-gradient(to right, #FF6B6B, #FFE66D, #FF6B6B);
+            border-radius: 6px 6px 0 0;
             z-index: 6;
-            bottom: 200px; /* 调整位置 */
-            left: 194px; /* 调整位置 */
-            box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+            bottom: 217px; /* 调整位置 */
+            left: 218px; /* 调整位置 */
+            box-shadow: 0 0 12px rgba(255, 107, 107, 0.6);
+            /* 添加蜡烛条纹效果 */
+            background-image: 
+                linear-gradient(90deg, 
+                    transparent 0%, 
+                    rgba(255, 255, 255, 0.3) 30%, 
+                    transparent 60%, 
+                    rgba(255, 255, 255, 0.2) 100%);
         }
         
         .candle::before {
             content: '';
             position: absolute;
-            width: 16px; /* 从14px增加到16px */
-            height: 6px; /* 从5px增加到6px */
-            background: #FF1493;
+            width: 18px; /* 从16px增加到18px */
+            height: 7px; /* 从6px增加到7px */
+            background: #FF4757;
             top: 0;
             left: -2px;
-            border-radius: 3px; /* 从2px增加到3px */
+            border-radius: 4px; /* 从3px增加到4px */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* 烛泪效果 */
+        .candle::after {
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 15px;
+            background: linear-gradient(to bottom, #FF4757, #FF6B6B);
+            top: 75px;
+            left: 3px;
+            border-radius: 4px;
+            opacity: 0.8;
+            box-shadow: 
+                2px 0 0 #FF4757,
+                -2px 0 0 #FF4757;
         }
         
         /* 更精细的火焰效果 */
         .flame {
             position: absolute;
-            width: 20px; /* 从16px增加到20px */
-            height: 40px; /* 从30px增加到40px */
+            width: 22px; /* 从20px增加到22px */
+            height: 45px; /* 从40px增加到45px */
             background: radial-gradient(circle at 30% 30%, #FFF 0%, #FFD700 30%, #FF4500 70%, transparent 100%);
             border-radius: 50% 50% 20% 20%;
-            bottom: 45px; /* 调整位置 */
+            bottom: 50px; /* 调整位置 */
             left: 50%;
             transform: translateX(-50%);
             animation: flicker 1.2s infinite alternate;
@@ -363,23 +389,23 @@
         .flame::after {
             content: '';
             position: absolute;
-            width: 12px; /* 从10px增加到12px */
-            height: 25px; /* 从20px增加到25px */
+            width: 14px; /* 从12px增加到14px */
+            height: 28px; /* 从25px增加到28px */
             background: rgba(255, 255, 255, 0.5);
             top: 5px;
-            left: 4px; /* 调整位置 */
+            left: 4px;
             border-radius: 50%;
-            filter: blur(4px); /* 从3px增加到4px */
+            filter: blur(4px);
         }
         
-        /* 添加蜡烛光晕效果 - 更精细 */
+        /* 蜡烛光晕效果 - 更精细 */
         .candle-glow {
             position: absolute;
-            width: 60px; /* 光晕宽度 */
-            height: 100px; /* 光晕高度 */
-            background: radial-gradient(circle, rgba(255, 215, 0, 0.3) 0%, transparent 70%);
+            width: 70px; /* 从60px增加到70px */
+            height: 110px; /* 从100px增加到110px */
+            background: radial-gradient(circle, rgba(255, 215, 0, 0.4) 0%, transparent 70%);
             border-radius: 50%;
-            bottom: 180px; /* 调整位置 */
+            bottom: 200px; /* 调整位置 */
             left: 50%;
             transform: translateX(-50%);
             z-index: 4;
@@ -466,64 +492,64 @@
             }
             
             #cake-container {
-                width: 320px; /* 调整移动端尺寸 */
-                height: 300px;
+                width: 350px; /* 调整移动端尺寸 */
+                height: 330px;
             }
             
             .cake-plate {
-                width: 280px;
-                left: 20px;
+                width: 300px;
+                left: 25px;
             }
             
             .layer-1 {
-                width: 250px;
-                height: 45px;
+                width: 280px;
+                height: 50px;
                 left: 35px;
             }
             
             .layer-2 {
-                width: 200px;
-                height: 45px;
+                width: 230px;
+                height: 50px;
                 left: 60px;
             }
             
             .layer-3 {
-                width: 160px;
-                height: 45px;
-                left: 80px;
+                width: 180px;
+                height: 50px;
+                left: 85px;
             }
             
             .layer-4 {
-                width: 120px;
-                height: 35px;
-                left: 100px;
-            }
-            
-            .frosting-1 {
-                bottom: 185px;
+                width: 130px;
+                height: 40px;
                 left: 110px;
             }
             
-            .frosting-2 {
-                bottom: 145px;
+            .frosting-1 {
+                bottom: 200px;
                 left: 120px;
             }
             
-            .frosting-3 {
-                bottom: 105px;
-                left: 130px;
+            .frosting-2 {
+                bottom: 150px;
+                left: 135px;
             }
             
-            .candle {
-                height: 65px;
-                bottom: 145px;
+            .frosting-3 {
+                bottom: 100px;
                 left: 150px;
             }
             
+            .candle {
+                height: 70px;
+                bottom: 150px;
+                left: 170px;
+            }
+            
             .candle-glow {
-                bottom: 130px;
-                width: 50px;
-                height: 80px;
+                bottom: 135px;
+                width: 55px;
+                height: 85px;
             }
             
             .blessing {
@@ -670,8 +696,8 @@
                 }
                 
                 explode() {
-                    // 增加粒子数量，让爆炸效果更壮观（从120增加到150）
-                    const particleCount = 150;
+                    // 增加粒子数量，让爆炸效果更壮观（从150增加到180）
+                    const particleCount = 180;
                     for (let i = 0; i < particleCount; i++) {
                         particles.push(new Particle(this.x, this.y, this.color));
                     }
@@ -760,8 +786,8 @@
                     }
                 }
                 
-                // 增加新烟花生成频率，从0.015增加到0.025
-                if (Math.random() < 0.025) {
+                // 增加新烟花生成频率，从0.025增加到0.03
+                if (Math.random() < 0.03) {
                     createFirework();
                 }
             }
@@ -820,14 +846,14 @@
         
         // 开始祝福语动画
         function startBlessingAnimation() {
-            // 增加祝福语生成频率：从400ms减少到200ms
-            setInterval(createBlessing, 200);
+            // 增加祝福语生成频率：从200ms减少到180ms
+            setInterval(createBlessing, 180);
             
-            // 增加初始祝福语数量：从5个增加到10个
-            for (let i = 0; i < 10; i++) {
+            // 增加初始祝福语数量：从10个增加到12个
+            for (let i = 0; i < 12; i++) {
                 setTimeout(() => {
                     createBlessing();
-                }, i * 150); // 减少间隔时间，从200ms减少到150ms
+                }, i * 140); // 减少间隔时间，从150ms减少到140ms
             }
             
             // 添加额外的祝福语生成器，每次生成多个祝福语
@@ -837,9 +863,9 @@
                 for (let i = 0; i < count; i++) {
                     setTimeout(() => {
                         createBlessing();
-                    }, i * 100);
+                    }, i * 90);
                 }
-            }, 1000); // 每1秒生成一组祝福语
+            }, 900); // 每0.9秒生成一组祝福语
         }
         
         // 创建祝福语
@@ -925,17 +951,17 @@
             
             blessingsContainer.appendChild(blessingElement);
             
-            // 缩短祝福语显示时间，从7000ms减少到5000ms
+            // 缩短祝福语显示时间，从5000ms减少到4800ms
             setTimeout(() => {
                 if (blessingElement.parentNode) {
                     blessingElement.parentNode.removeChild(blessingElement);
                 }
-            }, 5000);
+            }, 4800);
             
             // 增加最大祝福语数量限制
             setTimeout(() => {
                 const blessings = blessingsContainer.querySelectorAll('.blessing');
-                if (blessings.length > 35) { // 从25增加到35
+                if (blessings.length > 35) {
                     blessings[0].remove();
                 }
             }, 6000);
